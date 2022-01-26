@@ -20,17 +20,8 @@
     <h1>Olá, mundo!</h1>
     <p>Sou liberto em nome de Jesus</p>
     <script>
-        window.alert('minha primeira mensagem')//mensagem ao abrir a página
-        window.confirm('está gostando de JS?')//janela com botão ok ou cancelar
-        window.prompt('Qual é o seu nome?')//vai perguntar o nome
-        //= significa (recebe)
-        //=null não pode colocar nada
-        /*dicas para identificadores:
-        maiuscula e minusculas tem diferença;
-        escolha nomes coerentes;*/
         
+        var nome = window.prompt('Qual é o seu nome?')//vai perguntar o nome
+        window.alert('É um prazer em te conhecer,' + nome +'!')// o sinal de + serve para contatenação
 
     </script>
-    
-</body>
-</html>

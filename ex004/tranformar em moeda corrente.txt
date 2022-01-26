@@ -1,0 +1,4 @@
+colocar valoe em moeda corrente
+
+comando:
+ n1.toLocaleString('pt-BR', {style:'currency', currency: BRL

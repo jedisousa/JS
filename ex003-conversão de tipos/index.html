@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversão de Tipos</title>
+    <style>
+        body{
+            background-color: rgb(185, 185, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(131, 131, 84);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Sou liberto em nome de Jesus</p>
+    <script>
+        
+        var n1 = Number.parseInt(window.prompt('Digite um número:  ')) //recebe um string
+        var n2 = Number.parseInt (window.prompt('Digite outro número:  '))//recebe um string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        
+        // + serve para contatenação e tambem para adição
+        /*(number+number) para adição
+        string+string para contatenação*/
+        //converter para numero inteiro: number.parselnt(n)
+        //converter para numero fracionado number.parseFloat(n)
+        //posso usar apenas number, que funciona do mesmo jeito
+
+        //para transformar de number para string usasse o *String(n)* ou o *n.toString()
+        
+
+
+    </script>
