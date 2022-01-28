@@ -1,0 +1,25 @@
+DOM 
+ÁRVORE DOM
+
+WINDOW ----LOCATION
+           DOCUMENT
+           HISTORY
+
+
+DOCUMENT---HTML ---HEAD      HEAD ---- META
+                   BODY                TITLE
+
+                             BODY ----H1
+                                      P
+                                      P    ------  STRONG
+                                      DIV
+ 
+SELECIONANDO
+
+POR MARCA 
+1- getElementsByTagName()-pode selecionar varios elementos;
+_____________________________________________________________________________
+POR ID
+2- getElementByld()
+_____________________________________________________________________________
+POR SELETOR
