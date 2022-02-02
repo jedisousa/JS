@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <style>
+        body{
+            background-color: rgba(104, 206, 253, 0.815);
+            
+        }
+        h1{ 
+            font: normal 18pt Arial;
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>QUEM É OBRIGADO A VOTAR?</h1>
+    <h2>Insira sua idade</h2> <input type="number" name="txtid" id="txtid"><input type="button" value="verificar" onclick="calcular()">
+    <div id='res'></div>
+    <script>
+        function calcular() {
+            var txtid = window.document.querySelector('input#txtid')
+            var idade = Number (txtid.value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você possue <strong>${idade}anos</strong></p>`
+            if (idade < 16) {
+                res.innerHTML += 'Você ainda não possui Idade para <strong>VOTAR</strong>'
+            }
+            else if( idade <18 || idade >=65)
+                res.innerHTML += 'Seu voto é facultativo'
+            
+            else 
+            res.innerHTML += 'Voto Obrigatório' 
+        }
+
+    </script>
+</body>
+</html>

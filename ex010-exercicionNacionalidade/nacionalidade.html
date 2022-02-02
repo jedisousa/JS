@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+    <style>
+        body{
+            background-color: rgba(199, 199, 199, 0.616);
+        }
+        h1{
+            background-color: rgb(68, 68, 68);
+            color: white;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    País de Origem <input type="text" name="textnac" id="textnac"><input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+          function verificar(){
+            var txtnac = window.document.querySelector('input#textnac')
+            var nac = ('txtnac#value')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Seu país de Origem é ${nac}, você é considerado`
+            
+            if (brasil) {
+                res.innerHTML += 'Brasileiro'
+            }
+            else 
+            innerHTML +='Estrangeiro'
+
+          }
+
+    </script>
+</html>
