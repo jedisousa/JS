@@ -16,6 +16,10 @@ section{
     margin: auto;
     box-shadow: 5px 5px 10px rgba(97, 97, 97, 0.548);
 }
+div{
+    text-align: center;
+    padding: 8px;
+}
 h1{
     font: normal 18pt Arial;
     color: white;
