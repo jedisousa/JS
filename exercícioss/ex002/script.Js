@@ -11,7 +11,7 @@ if (fano.value.length == 0 || fano.value > ano) {
     var gênero =''
     var img = document.createElement('img')
     img.setAttribute('id', 'foto' )
-    if (fsex[0].Checked) {
+ if (fsex[0].Checked) {
         gênero = 'Homem'
         if (idade >=0 && idade<10){
              //Criança
@@ -27,8 +27,9 @@ if (fano.value.length == 0 || fano.value > ano) {
         else {
             //Idoso
         } 
-    } else if (fsex[1].Checked) 
+    } else if (fsex[1].Checked) {
         gênero = 'Mulher'
+    }
         if (idade >=0 && idade<10){
             //Criança
        }
@@ -46,5 +47,4 @@ if (fano.value.length == 0 || fano.value > ano) {
     res.style.textAlign = 'center'
     res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
     res.appendChild(img)
-}
 }
